@@ -1,45 +1,47 @@
-body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    text-align: center;
 }
-.container{
+
+.container {
     max-width: 960px;
-    margin:0 auto; 
+    margin: auto;
 }
 
-#playlist{
-    display:flex;
+.playlist {
+    display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
     justify-content: center;
-    gap:12px;
+}
 
+.itemcancion {
+    max-width: 150px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
-#reproductor{
-    position:fixed;
-    background-color: rgba(128, 128, 128, 0.617);
-    width:100%;
-    bottom:0;
-    display:flex;
-    justify-content: center;
-    padding:20px;
-}
-#reproductor button{
-    width: 50px;
-    height: 50px;
-    border:none;
-    background-color: transparent;
-    padding: 20px;
-}
-#reproductor button svg{
-    width:40px;
-    height:40px;
-    color: gray;
-    
-}
-.itemcancion{
-    border: solid 1px gray;
-}
-.itemcancion:hover{
-    background-color: bisque;
-    cursor:pointer;
 
+.itemcancion:hover {
+    transform: scale(1.05);
+    background-color: antiquewhite;
+}
+
+.itemcancion img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.info-cancion {
+    margin-top: 20px;
+}
+
+.info-cancion img {
+    width: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
