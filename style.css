@@ -1,0 +1,45 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    max-width: 960px;
+    margin:0 auto; 
+}
+
+#playlist{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:12px;
+
+}
+#reproductor{
+    position:fixed;
+    background-color: rgba(128, 128, 128, 0.617);
+    width:100%;
+    bottom:0;
+    display:flex;
+    justify-content: center;
+    padding:20px;
+}
+#reproductor button{
+    width: 50px;
+    height: 50px;
+    border:none;
+    background-color: transparent;
+    padding: 20px;
+}
+#reproductor button svg{
+    width:40px;
+    height:40px;
+    color: gray;
+    
+}
+.itemcancion{
+    border: solid 1px gray;
+}
+.itemcancion:hover{
+    background-color: bisque;
+    cursor:pointer;
+
+}
